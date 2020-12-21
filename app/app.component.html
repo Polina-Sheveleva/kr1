@@ -1,0 +1,11 @@
+<h1>
+  Контрольная работа <br> 
+  Полина Шевелёва 
+</h1>
+
+  <a  class="menu" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Главная|</a> 
+  <a  class="menu" routerLink="/fillmodel" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Заполнить Модель|</a> 
+  <a  class="menu" routerLinkeActive="active" *ngFor="let mod of models" [routerLink]="['model',mod.id]" [queryParams]="{'name':mod.name,'price':mod.price,'datetime':mod.datetime}">Модель {{mod.id}}|</a> 
+  <a  class="menu" routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">О Сайте</a><br>
+  <hr>
+  <router-outlet></router-outlet>

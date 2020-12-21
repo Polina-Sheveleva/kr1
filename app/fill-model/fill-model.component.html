@@ -1,0 +1,6 @@
+<h2>Заполняем Модель</h2>
+<input type="number" [(ngModel)] = model.id class="form-control" placeholder="ID"/><br/>
+<input type="string" [(ngModel)] = model.name class="form-control" placeholder="Название"/><br/>
+<input type="datetime" [(ngModel)] = model.datetime class="form-control" placeholder="Дата выпуска"/><br/>
+<input type="number" [(ngModel)] = model.price class="form-control" placeholder="Цена"/><br/>
+<button (click)="saveAndShow(model)"> Сохранить и показать</button>
